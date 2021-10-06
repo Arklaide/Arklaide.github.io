@@ -511,7 +511,7 @@ nav ul li a:focus {
   color: #a58347;
 }
 .testimonials {
-  background: #5b6869 url("../img/tBG01.jpg") no-repeat left center;
+  background: #5b6869 no-repeat left center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
