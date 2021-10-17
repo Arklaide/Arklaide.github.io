@@ -367,6 +367,12 @@ Headings
   color: #fff;
   margin: 100px 0 20px 0;
 }
+.download-now h2 {
+  font-size: 30px;
+  font-weight: 50;
+  color: #fff;
+  margin: 10px 0 20px 0;
+}
 .testimonials h1 {
   color: #fff;
   font-size: 43px;
@@ -440,6 +446,7 @@ nav ul li a:focus {
   font-style: italic;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 17px;
+  background-color: #ffffff55;
 }
 .hero a {
   color: #fff;
