@@ -433,7 +433,7 @@ nav ul li a:focus {
   display: none;
 }
 .hero {
-  background: url("../img/rieck_wide.jpg") no-repeat center center;
+  background: url("../img/flyer-min.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
