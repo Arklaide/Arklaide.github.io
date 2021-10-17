@@ -356,7 +356,8 @@ Headings
 .hero h1 {
   font-size: 60px;
   font-weight: 100;
-  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(0, 0, 0);
   letter-spacing: -1px;
   margin: 100px 0 20px 0;
 }
@@ -426,7 +427,7 @@ nav ul li a:focus {
   display: none;
 }
 .hero {
-  background: url("../img/hero.jpg") no-repeat center center;
+  background: url("../img/rieck_wide.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -435,8 +436,9 @@ nav ul li a:focus {
   height: auto;
 }
 .hero p {
-  color: #d0e7e9;
+  color: #000000;
   font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 17px;
 }
 .hero a {
@@ -678,7 +680,7 @@ footer p {
   -o-transform: rotate(360deg);
 }
 .footer-credit {
-  font-size: 12px;
+  font-size: 6px;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
