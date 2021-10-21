@@ -360,6 +360,7 @@ Headings
   color: rgb(0, 0, 0);
   letter-spacing: -1px;
   margin: 100px 0 20px 0;
+  filter: drop-shadow(0 0px 10px #fff);
 }
 .download-now h1 {
   font-size: 55px;
