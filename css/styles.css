@@ -355,7 +355,9 @@ Headings
 
 .hero h2 {
   margin-top: 100px;
-  opacity: 70%;
+  opacity: 80%;
+  filter: drop-shadow(0 0px 10px #fff);
+  color: rgb(0, 0, 0);
 }
 
 .hero h1 {
@@ -402,17 +404,16 @@ Headings
 Custom Styles
 ========================================================================== */
 
-.footer_button {
-  margin-bottom: 10px;
-  padding: 5px;
-  width: auto;
-  height: auto;
+.footer_button_icon {
+  margin-right: 5px;
+  flex-shrink: 0;
 }
 
-@media screen and (max-width: 975px) {
-  .footer_button {
-    width: 300px;
-  }
+.footer_button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  white-space: normal;
 }
 
 p {
@@ -454,7 +455,7 @@ nav ul li a:focus {
 }
 .hero {
   background: url("../img/flyer-min-min.jpg") no-repeat center center;
-  background-position: 0% 30%;
+  background-position: 0% 20%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -462,6 +463,19 @@ nav ul li a:focus {
   padding: 65px 0;
   height: auto;
 }
+
+@media screen and (max-width: 1550px) {
+  .hero {
+    background-position: 0% 30%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    background-position: right 40% top 30%;
+    height: 700px;
+  }
+}
+
 .hero p {
   color: #000000;
   font-style: italic;
