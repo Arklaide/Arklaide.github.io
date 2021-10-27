@@ -353,13 +353,18 @@ Clearfix
 Headings
 ========================================================================== */
 
+.hero h2 {
+  margin-top: 100px;
+  opacity: 70%;
+}
+
 .hero h1 {
   font-size: 60px;
   font-weight: 100;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(0, 0, 0);
   letter-spacing: -1px;
-  margin: 100px 0 20px 0;
+  margin: 10px 0 20px 0;
   filter: drop-shadow(0 0px 10px #fff);
 }
 .download-now h1 {
@@ -382,7 +387,7 @@ Headings
   font-style: italic;
 }
 .features h1 {
-  color: #9197a8;
+  color: #000000;
   font-size: 15px;
   margin: 0 0 20px 0;
   text-transform: uppercase;
@@ -396,6 +401,20 @@ Headings
 /* ==========================================================================
 Custom Styles
 ========================================================================== */
+
+.footer_button {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: auto;
+  height: auto;
+}
+
+@media screen and (max-width: 975px) {
+  .footer_button {
+    width: 300px;
+  }
+}
+
 p {
   font-weight: 300;
 }
@@ -434,7 +453,8 @@ nav ul li a:focus {
   display: none;
 }
 .hero {
-  background: url("../img/flyer-min.jpg") no-repeat center center;
+  background: url("../img/flyer-min-min.jpg") no-repeat center center;
+  background-position: 0% 30%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
