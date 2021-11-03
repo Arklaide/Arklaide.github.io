@@ -21,6 +21,12 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="favicon.ico" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,6 +37,20 @@
   </head>
   <body>
     <section class="hero" id="hero">
+      <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px; z-index: 1;">
+        <div class="toast hide" style="position: fixed; top: 0; right: 0; background-color: rgb(177, 177, 177); border-radius: 5px; margin: 5px; padding-top: 2px;">
+          <div class="toast-header">
+            <!-- <img src="/favicon.ico" class="rounded mr-2"> -->
+            <strong class="mr-auto">&nbspThanks!</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body" style="background-color: rgb(122, 122, 122); border-radius: 5px; padding-left: 5px;">
+            I hope you will consider me! 
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="row">
           <div
@@ -80,6 +100,7 @@
               cohesion and collaboration between students and staff and between
               study lines and departments.
             </p>
+            <h2>A better ITU</h2>
             <p>
               The students need a chance to understand the lecturers, and the
               lecturers need a way to understand the students. We need ways to
@@ -90,6 +111,7 @@
               improve the already great research of ITU – which could rank ITU
               higher.
             </p>
+            <h2>Well-being of students</h2>
             <p>
               ITU is filled with students, and there is an increased interest in
               spending time at the campus. This results in overcrowded areas -
@@ -108,6 +130,7 @@
               - by bringing new ideas from the students' perspective to the ITU
               strategy.
             </p>
+            <h2>Future expansions is not necessarily equal a worse ITU</h2>
             <p>
               If the proposal to create a new ITU campus in Vejle passes, I will
               also fight to ensure that we keep the ITU feel whether you are
@@ -274,7 +297,7 @@
         <div class="row">
           <div class="col-md-4" id="howtovote">
             <h1>How to vote</h1>
-            <ul>
+            <ol>
               <li>Pick your candidate(s).</li>
               <li>
                 Go to ITU either at the 29th or 30th of November between
@@ -286,7 +309,7 @@
               </li>
               <li>Fill out the voting papers which were handed to you.</li>
               <li>You are done! Thanks for voting.</li>
-            </ul>
+            </ol>
           </div>
           <div class="col-md-3">
             <p>
@@ -294,7 +317,6 @@
               my causes. I also encourage you to send ideas for long-term
               improvements to keep the ITU feeling.
             </p>
-          </div>
           <div class="col-md-2 col-md-offset-3">
             <ul class="footer-nav">
               <li>
@@ -366,11 +388,6 @@
         <div class="row">
           <div class="col-md-12 text-center">
             <a href="#" class="badge-btn">Badge Button</a>
-            <p class="footer-credit">
-              Design by
-              <a href="http://www.blazrobar.com">Blaz Robar </a>(modified for my
-              needs)
-            </p>
           </div>
         </div>
       </div>
