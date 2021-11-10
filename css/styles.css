@@ -405,6 +405,17 @@ Headings
 /* ==========================================================================
 Custom Styles
 ========================================================================== */
+.tldr-div {
+  font-family: "Karla", sans-serif;
+  background-color: #eeeeee;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+.tldr {
+  margin: 0;
+}
 
 .footer_button_icon {
   margin-right: 5px;
@@ -533,7 +544,7 @@ nav ul li a:focus {
 .download-now p {
   color: #fff;
   font-size: 16px;
-  margin: 40px 30px 40px 0;
+  margin: 5px 30px 40px 0;
   line-height: 30px;
 }
 .download-btn {
