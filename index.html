@@ -289,25 +289,37 @@
       controls.className = 'plan-controls';
       controls.innerHTML = `
         <label>Days: <input type="number" id="planDays" min="1" max="14" value="7"></label>
-        <label>Tag: <select id="planTag"><option value="">Any</option>${allTags.map(t => `<option value="${t}">${t}</option>`).join('')}</select></label>
+             <label>Tags: 
+          <select id="planTags" multiple size="${allTags.length}">
+            ${allTags.map(t => `<option value="${t}">${t}</option>`).join('')}
+          </select>
+        </label>
         <button id="generatePlan">Generate Plan</button>
       `;
       recipeContainer.appendChild(controls);
 
       document.getElementById('generatePlan').onclick = () => {
         const days = parseInt(document.getElementById('planDays').value);
-        const tag = document.getElementById('planTag').value;
-        generatePlan(days, tag);
+        const selected = Array.from(document.getElementById('planTags').selectedOptions).map(o => o.value);
+        generatePlan(days, selected);
       };
     }
 
-    function generatePlan(days, tag) {
-      const filtered = tag ? recipes.filter(r => r.tags.includes(tag)) : recipes;
+ function generatePlan(days, selectedTags) {
+      let filtered = recipes;
+      if (selectedTags.length > 0) {
+        filtered = recipes.filter(r => selectedTags.some(tag => r.tags.includes(tag)));
+      }
+
       if (filtered.length === 0) {
-        recipeContainer.innerHTML += '<p>No recipes match this filter.</p>';
+        recipeContainer.innerHTML += '<p>No recipes match these filters.</p>';
         return;
       }
+
+      recipeContainer.querySelectorAll(".plan-output").forEach(e => e.remove()); // clear old plan
       const planDiv = document.createElement('div');
+      planDiv.className = "plan-output";
+
       for (let i = 1; i <= days; i++) {
         const r = filtered[Math.floor(Math.random() * filtered.length)];
         const card = document.createElement('div');
